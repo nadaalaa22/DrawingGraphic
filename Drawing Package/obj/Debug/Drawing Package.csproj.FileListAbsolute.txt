@@ -11,3 +11,16 @@ F:\year 3\Term 2\new package from 0\Drawing Package\Drawing Package\obj\Debug\Dr
 F:\year 3\Term 2\new package from 0\Drawing Package\Drawing Package\obj\Debug\Drawing Package.exe
 F:\year 3\Term 2\new package from 0\Drawing Package\Drawing Package\obj\Debug\Drawing Package.pdb
 F:\year 3\Term 2\new package from 0\Drawing Package\Drawing Package\obj\Debug\Drawing_Package.Form3.resources
+F:\year 3\Term 2\Final Package\DrawingGraphic\Drawing Package\bin\Debug\Drawing Package.exe.config
+F:\year 3\Term 2\Final Package\DrawingGraphic\Drawing Package\bin\Debug\Drawing Package.exe
+F:\year 3\Term 2\Final Package\DrawingGraphic\Drawing Package\bin\Debug\Drawing Package.pdb
+F:\year 3\Term 2\Final Package\DrawingGraphic\Drawing Package\obj\Debug\Drawing Package.csproj.AssemblyReference.cache
+F:\year 3\Term 2\Final Package\DrawingGraphic\Drawing Package\obj\Debug\Drawing Package.csproj.SuggestedBindingRedirects.cache
+F:\year 3\Term 2\Final Package\DrawingGraphic\Drawing Package\obj\Debug\Drawing_Package.Form1.resources
+F:\year 3\Term 2\Final Package\DrawingGraphic\Drawing Package\obj\Debug\Drawing_Package.Form3.resources
+F:\year 3\Term 2\Final Package\DrawingGraphic\Drawing Package\obj\Debug\Drawing_Package.Points_Results.resources
+F:\year 3\Term 2\Final Package\DrawingGraphic\Drawing Package\obj\Debug\Drawing_Package.Properties.Resources.resources
+F:\year 3\Term 2\Final Package\DrawingGraphic\Drawing Package\obj\Debug\Drawing Package.csproj.GenerateResource.cache
+F:\year 3\Term 2\Final Package\DrawingGraphic\Drawing Package\obj\Debug\Drawing Package.csproj.CoreCompileInputs.cache
+F:\year 3\Term 2\Final Package\DrawingGraphic\Drawing Package\obj\Debug\Drawing Package.exe
+F:\year 3\Term 2\Final Package\DrawingGraphic\Drawing Package\obj\Debug\Drawing Package.pdb

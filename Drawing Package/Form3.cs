@@ -163,7 +163,6 @@ namespace Drawing_Package
             int y3 = Convert.ToInt32(textBox19.Text);
             int x4 = Convert.ToInt32(textBox18.Text);
             int y4 = Convert.ToInt32(textBox17.Text);
-
             int xScale = Convert.ToInt32(textBox24.Text);
             int yScale = Convert.ToInt32(textBox25.Text);
 

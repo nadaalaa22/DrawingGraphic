@@ -247,7 +247,7 @@
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(152, 32);
             this.button13.TabIndex = 58;
-            this.button13.Text = "Rotate Origin";
+            this.button13.Text = "Reflect Origin";
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
@@ -257,7 +257,7 @@
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(124, 32);
             this.button12.TabIndex = 57;
-            this.button12.Text = "RotateY";
+            this.button12.Text = "Reflect Y";
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
@@ -267,7 +267,7 @@
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(120, 32);
             this.button11.TabIndex = 56;
-            this.button11.Text = "RotateX";
+            this.button11.Text = "Reflect X";
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
