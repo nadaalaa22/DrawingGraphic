@@ -30,14 +30,15 @@ namespace Drawing_Package
                 g.FillRectangle(aBrush, 292, j, 1, 1);
             }
         }
-        private void ddaPlotPoints(float x, float y)
+        private void ddaPlotPoints(float x, float y, Brush color )
         {
-            var aBrush = Brushes.Black;
+            //  var aBrush = Brushes.Black;
+            var aBrush = color;
             var g = panel1.CreateGraphics();
 
             g.FillRectangle(aBrush, 292 + x, 222 - y, 2, 2);
         }
-        void lineDDA(int x0, int y0, int xEnd, int yEnd)
+        void lineDDA(int x0, int y0, int xEnd, int yEnd , Brush color )
         {
             int dx = xEnd - x0, dy = yEnd - y0, steps, k;
             float xIncrement, yIncrement, x = x0, y = y0;
@@ -56,7 +57,7 @@ namespace Drawing_Package
 
                 try
                 {
-                    ddaPlotPoints(x, y);
+                    ddaPlotPoints(x, y , color);
                 }
                 catch (InvalidOperationException)
 
@@ -80,16 +81,16 @@ namespace Drawing_Package
             panel1.Controls.Clear();
             this.Refresh();
             drawAxis();
-            DrawRectangle(x1, y1, x2, y2, x3, y3, x4, y4);
+            DrawRectangle(x1, y1, x2, y2, x3, y3, x4, y4 , Brushes.Black);
 
 
         }
-        private void DrawRectangle(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4)
+        private void DrawRectangle(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4 , Brush color )
         {
-            lineDDA(x1, y1, x2, y2);
-            lineDDA(x2, y2, x3, y3);
-            lineDDA(x4, y4, x3, y3);
-            lineDDA(x1, y1, x4, y4);
+            lineDDA(x1, y1, x2, y2 , color);
+            lineDDA(x2, y2, x3, y3 , color);
+            lineDDA(x4, y4, x3, y3, color);
+            lineDDA(x1, y1, x4, y4, color);
         }
 
         //Translate
@@ -130,7 +131,7 @@ namespace Drawing_Package
             Translate(ref x3, ref y3, ref xTrans, ref yTrans);
             Translate(ref x4, ref y4, ref xTrans, ref yTrans);
 
-            DrawRectangle(x1, y1, x2, y2, x3, y3, x4, y4);
+            DrawRectangle(x1, y1, x2, y2, x3, y3, x4, y4 , Brushes.Red);
         }
 
 
@@ -171,7 +172,7 @@ namespace Drawing_Package
             Scale(ref x3, ref y3, ref xScale, ref yScale);
             Scale(ref x4, ref y4, ref xScale, ref yScale);
 
-            DrawRectangle(x1, y1, x2, y2, x3, y3, x4, y4);
+            DrawRectangle(x1, y1, x2, y2, x3, y3, x4, y4, Brushes.Red);
 
         }
 
@@ -232,7 +233,7 @@ namespace Drawing_Package
             Rotate(ref x3, ref y3, ref Theta);
             Rotate(ref x4, ref y4, ref Theta);
 
-            DrawRectangle(x1, y1, x2, y2, x3, y3, x4, y4);
+            DrawRectangle(x1, y1, x2, y2, x3, y3, x4, y4, Brushes.Purple);
 
 
         }
@@ -274,7 +275,7 @@ namespace Drawing_Package
             ShearX(ref x3, ref y3, ref shx);
             ShearX(ref x4, ref y4, ref shx);
 
-            DrawRectangle(x1, y1, x2, y2, x3, y3, x4, y4);
+            DrawRectangle(x1, y1, x2, y2, x3, y3, x4, y4, Brushes.Yellow);
 
         }
         //sheering y
@@ -313,7 +314,7 @@ namespace Drawing_Package
             ShearY(ref x3, ref y3, ref shy);
             ShearY(ref x4, ref y4, ref shy);
 
-            DrawRectangle(x1, y1, x2, y2, x3, y3, x4, y4);
+            DrawRectangle(x1, y1, x2, y2, x3, y3, x4, y4, Brushes.Yellow);
 
         }
         //refliction x
@@ -350,7 +351,7 @@ namespace Drawing_Package
             ReflectOverX(ref x3, ref y3);
             ReflectOverX(ref x4, ref y4);
 
-            DrawRectangle(x1, y1, x2, y2, x3, y3, x4, y4);
+            DrawRectangle(x1, y1, x2, y2, x3, y3, x4, y4, Brushes.Red);
 
 
 
@@ -392,7 +393,7 @@ namespace Drawing_Package
             ReflectOverY(ref x3, ref y3);
             ReflectOverY(ref x4, ref y4);
 
-            DrawRectangle(x1, y1, x2, y2, x3, y3, x4, y4);
+            DrawRectangle(x1, y1, x2, y2, x3, y3, x4, y4, Brushes.Red);
 
         }
 
@@ -434,7 +435,7 @@ namespace Drawing_Package
             ReflectOverOrigin(ref x3, ref y3);
             ReflectOverOrigin(ref x4, ref y4);
 
-            DrawRectangle(x1, y1, x2, y2, x3, y3, x4, y4);
+            DrawRectangle(x1, y1, x2, y2, x3, y3, x4, y4, Brushes.Red);
 
         }
 

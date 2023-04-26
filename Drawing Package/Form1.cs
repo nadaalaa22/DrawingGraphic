@@ -627,5 +627,10 @@ namespace Drawing_Package
         {
 
         }
+
+        private void txtBox_line_x1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

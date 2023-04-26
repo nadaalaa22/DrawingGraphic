@@ -64,7 +64,7 @@
             // 
             // DrawingPanel
             // 
-            this.DrawingPanel.BackColor = System.Drawing.Color.GhostWhite;
+            this.DrawingPanel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.DrawingPanel.Location = new System.Drawing.Point(400, 37);
             this.DrawingPanel.Name = "DrawingPanel";
             this.DrawingPanel.Size = new System.Drawing.Size(953, 626);
@@ -77,6 +77,7 @@
             this.txtBox_line_x1.Name = "txtBox_line_x1";
             this.txtBox_line_x1.Size = new System.Drawing.Size(98, 22);
             this.txtBox_line_x1.TabIndex = 1;
+            this.txtBox_line_x1.TextChanged += new System.EventHandler(this.txtBox_line_x1_TextChanged);
             // 
             // label1
             // 
